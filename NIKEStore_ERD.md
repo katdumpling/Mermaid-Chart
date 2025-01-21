@@ -6,6 +6,7 @@ CUSTOMER ||--o{PRODUCT : chooses
 SALE }|--|{INVENTORY : reduces
 SALE }|--|{PRODUCT : reduces
 CUSTOMER ||--o{INVENTORY : createsPopularity
+PRODUCT ||--o{INVENTORY : fills
 
 PRODUCT {
 string name
