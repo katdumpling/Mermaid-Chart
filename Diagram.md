@@ -1,11 +1,6 @@
 ```mermaid
-title: ER Diagram
-PRODUCT {Customer : orders
-}
-CUSTOMER {Inventory : browses
-} 
-SALE {Inventory: reduced
-}
-INVENTORY {Product: replenishes
-}
+ER Diagram
+CUSTOMER ||--o{ ORDER : places
+ORDER ||--|{ LINE-ITEM: contains
+CUSTOMER }|..|{ DELIVERY-ADDRESS: uses
 ```
